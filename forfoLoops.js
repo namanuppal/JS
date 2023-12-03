@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for (const i of arr) {
@@ -39,3 +40,6 @@ for (const game of Object.keys(myObj)) {
     console.log(game);
     
 }
+=======
+console.log('hi')
+>>>>>>> 8b4a1b8a780aaf97b6d73938445666265dd761b9
