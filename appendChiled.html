@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    div.className = 'main';
+    div.id = Math.round(Math.random() * 10 + 1);
+    // div.innerHTML = '<h1>DOM Learning</h1>';
+    const addText = document.createTextNode('DOM Learning');
+    div.appendChild(addText);
+
+    const body = document.querySelector('body');
+    body.appendChild(div);
+</script>
+</html>
