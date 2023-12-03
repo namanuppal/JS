@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM-<b>Document Object Model</b></title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="heading">DOM Learning</h1>
+        <p id="para">Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+<script>
+    // for css selector use querySelector
+    const heading = document.getElementById('heading');
+    const para = document.getElementById('para');
+
+
+    heading.style.color = 'red'; // use as css or
+    heading.style.padding = '10px';
+
+    heading.innerText = 'DOM Learning'; // change text and use for input tag and usually use
+    heading.innerHTML = '<span>DOM Learning</span>'; // change text and use for input tag and usually use
+
+
+</script>
+</html>

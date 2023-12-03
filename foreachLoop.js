@@ -4,6 +4,10 @@ coding.forEach( (i) => {
     // console.log(i);
 });
 
+const val = coding.forEach( (item) => {
+    // console.log(`values are ${item}`);
+});
+
 //2nd
 function printMe (item){
     // console.log(item);
