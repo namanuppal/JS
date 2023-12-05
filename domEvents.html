@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM  EVENTS</title>
+</head>
+<body>
+    <div id="list">
+        <h1>Hover</h1>
+        <h2>Click</h2>
+    </div>
+</body>
+<script>
+    const h1 = document.querySelector('h1');
+    const h2 = document.querySelector('h2');
+    // h1.addEventListener('mouseover', function(e){
+    //     // alert('You hovered over me!');
+    //     e.target.style.color = 'red';
+    // });
+    // h2.addEventListener('click', function(e){
+    //     alert('You clicked me!');
+    //     // e.stopPropogation(); use this to stop bubbling
+    // }, false);
+
+    // to read:-
+    // type, timestamp, preventDefault, stopPropogation
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, offsetX, offsetY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, metaKey, keyCode, charCode
+
+    document.getElementById('list').addEventListener('click', (e) => {
+        console.log(e.target);
+        console.log(e.target.parentNode);
+        let remove = e.target.parentNode;
+        // remove.remove();  // Ist method easy to use
+        // remove.parentNode.removeChild(remove); // 2nd method
+
+        // for good
+        if(e.target.tagName == 'LI'){
+            e.target.parentNode.removeChild(e.target);
+        }
+        // always check
+    }, false);
+</script>
+</html>
